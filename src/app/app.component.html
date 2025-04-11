@@ -31,6 +31,12 @@
               position: 'absolute',
               'background-color': colorInput
             }"
+             [ngClass]="{
+              'top': position === 'top',
+              'bottom': position === 'bottom',
+              'left': position === 'left',
+              'right': position === 'right'
+            }"
           >
             <p class="fulltext">{{ fulltext }}</p>
           </div>

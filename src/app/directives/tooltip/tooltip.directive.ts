@@ -26,8 +26,6 @@ export class TooltipDirective {
   onMouseEnter() {
     if (this.viewRef || !this.tooltipTemplate) return;
     this.viewRef = this.vcr.createEmbeddedView(this.tooltipTemplate);
-    const tooltipEl = this.viewRef.rootNodes[0] as HTMLElement;
-    tooltipEl.classList.add(this.position);
   }
   @HostListener('mouseleave')
   onMouseLeave() {
