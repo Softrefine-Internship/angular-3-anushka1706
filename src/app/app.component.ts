@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-3';
+  fulltext: string = "This is a custom tooltip directive !"
+  position!: string 
+  fontSize!: string
+  colorInput: string = "pink"
+
 }
