@@ -12,10 +12,6 @@ import {
   selector: '[appTooltip]'
 })
 export class TooltipDirective {
-  @Input() originalText!: string 
-  @Input() colorInput!: string
-  @Input() fontSize!: string
-  @Input() position!: string 
   @Input('appTooltip') tooltipTemplate!: TemplateRef<any>;
 
   private viewRef: EmbeddedViewRef<any> | null = null;

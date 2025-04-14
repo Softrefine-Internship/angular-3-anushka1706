@@ -10,5 +10,4 @@ export class AppComponent {
   position!: string 
   fontSize!: string
   colorInput: string = "pink"
-
 }
